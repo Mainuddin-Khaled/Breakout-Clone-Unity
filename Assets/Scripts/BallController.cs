@@ -41,4 +41,18 @@ public class BallController : MonoBehaviour
     {
         rigidBody.linearVelocity = rigidBody.linearVelocity.normalized * launchSpeed;
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("DeathZone"))
+        {
+            Debug.Log("Ball lost!");
+
+            rigidBody.linearVelocity = Vector2.zero;
+
+            transform.position = paddle.position + paddleOffset;
+
+            hasLaunched = false;
+        }
+    }
 }
