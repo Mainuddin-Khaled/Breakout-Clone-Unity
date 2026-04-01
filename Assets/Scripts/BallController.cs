@@ -40,7 +40,10 @@ public class BallController : MonoBehaviour
 
     void KeepBallSpeedConstant()
     {
-        rigidBody.linearVelocity = rigidBody.linearVelocity.normalized * launchSpeed;
+        if (rigidBody.linearVelocity.sqrMagnitude > 0.01f)
+        {
+            rigidBody.linearVelocity = rigidBody.linearVelocity.normalized * launchSpeed;
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -77,5 +80,12 @@ public class BallController : MonoBehaviour
 
             hasLaunched = false;
         }
+    }
+
+    public void StopBall()
+    {
+        rigidBody.linearVelocity = Vector2.zero;
+        rigidBody.angularVelocity = 0f;
+        hasLaunched = true;
     }
 }
