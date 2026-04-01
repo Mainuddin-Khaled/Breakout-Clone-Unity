@@ -5,6 +5,7 @@ public class BallController : MonoBehaviour
     public Transform paddle;
     public float launchSpeed = 8f;
     public Vector2 launchDirection = new Vector2(0.7f, 1f);
+    public float maxBounceAngle = 60f;
     private Rigidbody2D rigidBody;
     private bool hasLaunched = false;
     private Vector3 paddleOffset;
@@ -40,6 +41,28 @@ public class BallController : MonoBehaviour
     void KeepBallSpeedConstant()
     {
         rigidBody.linearVelocity = rigidBody.linearVelocity.normalized * launchSpeed;
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Paddle"))
+        {
+            HandlePaddleBounce(collision);
+        }
+    }
+
+    void HandlePaddleBounce(Collision2D collision)
+    {
+        float paddleX = paddle.position.x;
+        float ballX = transform.position.x;
+        float difference = ballX - paddleX;
+        float halfPaddleWidth = collision.collider.bounds.size.x / 2f;
+        float normalizedHit = difference / halfPaddleWidth;
+        normalizedHit = Mathf.Clamp(normalizedHit, -1f, 1f);
+        float bounceAngle = normalizedHit * maxBounceAngle;
+        float angleInRadians = bounceAngle * Mathf.Deg2Rad;
+        Vector2 newDirection = new Vector2(Mathf.Sin(angleInRadians), Mathf.Cos(angleInRadians));
+        rigidBody.linearVelocity = newDirection.normalized * launchSpeed;
     }
 
     void OnTriggerEnter2D(Collider2D other)

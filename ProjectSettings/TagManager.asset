@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DeathZone
   - Ball
+  - Paddle
   layers:
   - Default
   - TransparentFX
