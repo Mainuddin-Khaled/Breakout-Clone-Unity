@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -5,6 +6,10 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     [Header("Game Settings")]
     public int startingLives = 3;
+    [Header("UI References")]
+    public TMP_Text livesText;
+    public GameObject winText;
+    public GameObject gameOverText;
     private int remainingBricks;
     private int currentLives;
     private bool gameWon = false;
@@ -20,6 +25,8 @@ public class GameManager : MonoBehaviour
         BrickBlock[] bricks = FindObjectsByType<BrickBlock>();
         remainingBricks = bricks.Length;
         currentLives = startingLives;
+        UpdateLivesUI();
+        HideEndMessages();
         Debug.Log("Bricks in level: " + remainingBricks);
         Debug.Log("Lives: " + currentLives);
     }
@@ -49,6 +56,7 @@ public class GameManager : MonoBehaviour
         }
         currentLives--;
         Debug.Log("Lives left: " + currentLives);
+        UpdateLivesUI();
         if (currentLives <= 0)
         {
             GameOver();
@@ -64,7 +72,10 @@ public class GameManager : MonoBehaviour
         gameWon = true;
 
         Debug.Log("YOU WIN!");
-
+        if (winText != null)
+        {
+            winText.SetActive(true);
+        }
         BallController ball = FindAnyObjectByType<BallController>();
 
         if (ball != null)
@@ -77,6 +88,10 @@ public class GameManager : MonoBehaviour
     {
         gameOver = true;
         Debug.Log("GAME OVER!");
+        if (gameOverText != null)
+        {
+            gameOverText.SetActive(true);
+        }
         BallController ball = FindAnyObjectByType<BallController>();
         if (ball != null)
         {
@@ -90,6 +105,26 @@ public class GameManager : MonoBehaviour
         if (ball != null)
         {
             ball.ResetBallToPaddle();
+        }
+    }
+
+    void UpdateLivesUI()
+    {
+        if (livesText != null)
+        {
+            livesText.text = "Lives: " + currentLives;
+        }
+    }
+
+    void HideEndMessages()
+    {
+        if (winText != null)
+        {
+            winText.SetActive(false);
+        }
+        if (gameOverText != null)
+        {
+            gameOverText.SetActive(false);
         }
     }
 }
