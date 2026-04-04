@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -30,7 +31,13 @@ public class GameManager : MonoBehaviour
         Debug.Log("Bricks in level: " + remainingBricks);
         Debug.Log("Lives: " + currentLives);
     }
-
+    void Update()
+    {
+        if ((gameWon || gameOver) && Input.GetKeyDown(KeyCode.R))
+        {
+            RestartGame();
+        }
+    }
     public void BrickDestroyed()
     {
         if (gameWon || gameOver)
@@ -71,7 +78,7 @@ public class GameManager : MonoBehaviour
     {
         gameWon = true;
 
-        Debug.Log("YOU WIN!");
+        Debug.Log("YOU WIN! Press R to Restart");
         if (winText != null)
         {
             winText.SetActive(true);
@@ -87,7 +94,7 @@ public class GameManager : MonoBehaviour
     void GameOver()
     {
         gameOver = true;
-        Debug.Log("GAME OVER!");
+        Debug.Log("GAME OVER! Press R to Restart");
         if (gameOverText != null)
         {
             gameOverText.SetActive(true);
@@ -126,5 +133,11 @@ public class GameManager : MonoBehaviour
         {
             gameOverText.SetActive(false);
         }
+    }
+
+    void RestartGame()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.buildIndex);
     }
 }
