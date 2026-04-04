@@ -70,16 +70,28 @@ public class BallController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("DeathZone"))
+        // if (other.CompareTag("DeathZone"))
+        // {
+        //     Debug.Log("Ball lost!");
+
+        //     rigidBody.linearVelocity = Vector2.zero;
+
+        //     transform.position = paddle.position + paddleOffset;
+
+        //     hasLaunched = false;
+        // }
+        if (GameManager.Instance != null)
         {
-            Debug.Log("Ball lost!");
-
-            rigidBody.linearVelocity = Vector2.zero;
-
-            transform.position = paddle.position + paddleOffset;
-
-            hasLaunched = false;
+            GameManager.Instance.BallLost();
         }
+    }
+
+    public void ResetBallToPaddle()
+    {
+        rigidBody.linearVelocity = Vector2.zero;
+        rigidBody.angularVelocity = 0f;
+        transform.position = paddle.position + paddleOffset;
+        hasLaunched = false;
     }
 
     public void StopBall()
