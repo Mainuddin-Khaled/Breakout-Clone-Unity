@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,12 +8,16 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     [Header("Game Settings")]
     public int startingLives = 3;
+    public int pointsPerBrick = 50;
+    
     [Header("UI References")]
     public TMP_Text livesText;
+    public TMP_Text scoreText;
     public GameObject winText;
     public GameObject gameOverText;
     private int remainingBricks;
     private int currentLives;
+    private int currentScore;
     private bool gameWon = false;
     private bool gameOver = false;
 
@@ -26,10 +31,12 @@ public class GameManager : MonoBehaviour
         BrickBlock[] bricks = FindObjectsByType<BrickBlock>();
         remainingBricks = bricks.Length;
         currentLives = startingLives;
+        currentScore = 0;
         UpdateLivesUI();
         HideEndMessages();
         Debug.Log("Bricks in level: " + remainingBricks);
         Debug.Log("Lives: " + currentLives);
+        Debug.Log("Score: " + currentScore);
     }
     void Update()
     {
@@ -46,9 +53,10 @@ public class GameManager : MonoBehaviour
         }
 
         remainingBricks--;
-
+        currentScore += pointsPerBrick;
         Debug.Log("Remaining bricks: " + remainingBricks);
-
+        Debug.Log("Score: " + currentScore);
+        UpdateScoreUI();
         if (remainingBricks <= 0)
         {
             WinGame();
@@ -120,6 +128,14 @@ public class GameManager : MonoBehaviour
         if (livesText != null)
         {
             livesText.text = "Lives: " + currentLives;
+        }
+    }
+
+    void UpdateScoreUI()
+    {
+        if (scoreText != null)
+        {
+            scoreText.text = "Score: " + currentScore;
         }
     }
 
