@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    
     [Header("Game Settings")]
     public int startingLives = 3;
     public int pointsPerBrick = 50;
@@ -30,10 +31,13 @@ public class GameManager : MonoBehaviour
     {
         BrickBlock[] bricks = FindObjectsByType<BrickBlock>();
         remainingBricks = bricks.Length;
+        
         currentLives = startingLives;
         currentScore = 0;
+        
         UpdateLivesUI();
         HideEndMessages();
+        
         Debug.Log("Bricks in level: " + remainingBricks);
         Debug.Log("Lives: " + currentLives);
         Debug.Log("Score: " + currentScore);
@@ -54,9 +58,12 @@ public class GameManager : MonoBehaviour
 
         remainingBricks--;
         currentScore += pointsPerBrick;
+        
         Debug.Log("Remaining bricks: " + remainingBricks);
         Debug.Log("Score: " + currentScore);
+        
         UpdateScoreUI();
+        
         if (remainingBricks <= 0)
         {
             WinGame();
@@ -69,9 +76,12 @@ public class GameManager : MonoBehaviour
         {
             return;
         }
+        
         currentLives--;
         Debug.Log("Lives left: " + currentLives);
+        
         UpdateLivesUI();
+        
         if (currentLives <= 0)
         {
             GameOver();
@@ -87,10 +97,12 @@ public class GameManager : MonoBehaviour
         gameWon = true;
 
         Debug.Log("YOU WIN! Press R to Restart");
+        
         if (winText != null)
         {
             winText.SetActive(true);
         }
+        
         BallController ball = FindAnyObjectByType<BallController>();
 
         if (ball != null)
@@ -102,12 +114,16 @@ public class GameManager : MonoBehaviour
     void GameOver()
     {
         gameOver = true;
+        
         Debug.Log("GAME OVER! Press R to Restart");
+        
         if (gameOverText != null)
         {
             gameOverText.SetActive(true);
         }
+        
         BallController ball = FindAnyObjectByType<BallController>();
+        
         if (ball != null)
         {
             ball.StopBall();
@@ -117,6 +133,7 @@ public class GameManager : MonoBehaviour
     void ResetBallToPaddle()
     {
         BallController ball = FindAnyObjectByType<BallController>();
+        
         if (ball != null)
         {
             ball.ResetBallToPaddle();

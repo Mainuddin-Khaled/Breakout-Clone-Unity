@@ -497,9 +497,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272739969312312301, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
       propertyPath: m_Name
       value: Brick Middle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: hitPoints
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: lowHealthColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: fullHealthColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: mediumHealthColor.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -842,9 +870,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272739969312312301, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
       propertyPath: m_Name
       value: Brick Top
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: hitPoints
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -899,9 +943,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272739969312312301, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
       propertyPath: m_Name
       value: Brick Bottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: fullHealthColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: mediumHealthColor.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1093,9 +1157,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272739969312312301, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
       propertyPath: m_Name
       value: Brick Bottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: fullHealthColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: mediumHealthColor.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1430,9 +1514,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272739969312312301, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
       propertyPath: m_Name
       value: Brick Middle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: hitPoints
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: lowHealthColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: fullHealthColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: mediumHealthColor.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1502,9 +1614,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272739969312312301, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
       propertyPath: m_Name
       value: Brick Middle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: hitPoints
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: lowHealthColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: fullHealthColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: mediumHealthColor.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1930,9 +2070,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272739969312312301, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
       propertyPath: m_Name
       value: Brick Bottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: fullHealthColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: mediumHealthColor.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2136,9 +2296,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272739969312312301, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
       propertyPath: m_Name
       value: Brick Top
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: hitPoints
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2242,9 +2418,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272739969312312301, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
       propertyPath: m_Name
       value: Brick Top
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: hitPoints
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2304,9 +2496,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272739969312312301, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
       propertyPath: m_Name
       value: Brick Bottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: fullHealthColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: mediumHealthColor.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2343,7 +2555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   startingLives: 3
-  pointsPerBrick: 50
+  pointsPerBrick: 100
   livesText: {fileID: 415470266}
   scoreText: {fileID: 473101869}
   winText: {fileID: 8967654}
@@ -2421,9 +2633,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272739969312312301, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
       propertyPath: m_Name
       value: Brick Middle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: hitPoints
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: lowHealthColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: fullHealthColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: mediumHealthColor.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2478,9 +2718,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272739969312312301, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
       propertyPath: m_Name
       value: Brick Bottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: fullHealthColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: mediumHealthColor.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2535,9 +2795,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272739969312312301, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
       propertyPath: m_Name
       value: Brick Middle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: hitPoints
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: lowHealthColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: fullHealthColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: mediumHealthColor.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2873,9 +3161,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272739969312312301, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
       propertyPath: m_Name
       value: Brick Top
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: hitPoints
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2930,9 +3234,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272739969312312301, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
       propertyPath: m_Name
       value: Brick Top
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: hitPoints
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2987,9 +3307,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272739969312312301, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
       propertyPath: m_Name
       value: Brick Top
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: hitPoints
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3049,9 +3385,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272739969312312301, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
       propertyPath: m_Name
       value: Brick Middle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: hitPoints
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: lowHealthColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: fullHealthColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: mediumHealthColor.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3111,9 +3475,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831725042438956347, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272739969312312301, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
       propertyPath: m_Name
       value: Brick Bottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: fullHealthColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313703791081035715, guid: 3368a964b5ea3404ca15a9cc19877059, type: 3}
+      propertyPath: mediumHealthColor.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
