@@ -78,6 +78,10 @@ public class GameManager : MonoBehaviour
         }
         
         currentLives--;
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayLoseLife();
+        }
         Debug.Log("Lives left: " + currentLives);
         
         UpdateLivesUI();
@@ -94,6 +98,10 @@ public class GameManager : MonoBehaviour
 
     void WinGame()
     {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayWin();
+        }
         gameWon = true;
 
         Debug.Log("YOU WIN! Press R to Restart");
@@ -113,6 +121,10 @@ public class GameManager : MonoBehaviour
 
     void GameOver()
     {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayGameOver();
+        }
         gameOver = true;
         
         Debug.Log("GAME OVER! Press R to Restart");

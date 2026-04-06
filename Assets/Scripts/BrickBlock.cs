@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class BrickBlock : MonoBehaviour
@@ -40,12 +39,20 @@ public class BrickBlock : MonoBehaviour
         }
         else
         {
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayBrickHit();
+            }
             UpdateBrickColor();
         }
     }
 
     void DestroyBrick()
     {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayBrickBreak();
+        }
         if (GameManager.Instance != null)
         {
             GameManager.Instance.BrickDestroyed();

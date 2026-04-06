@@ -51,6 +51,18 @@ public class BallController : MonoBehaviour
         if (collision.gameObject.CompareTag("Paddle"))
         {
             HandlePaddleBounce(collision);
+
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayPaddleHit();
+            }
+        }
+        else if (collision.gameObject.CompareTag("Wall"))
+        {
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayWallHit();
+            }
         }
     }
 

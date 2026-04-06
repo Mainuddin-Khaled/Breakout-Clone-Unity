@@ -7,6 +7,7 @@ TagManager:
   - DeathZone
   - Ball
   - Paddle
+  - Wall
   layers:
   - Default
   - TransparentFX
