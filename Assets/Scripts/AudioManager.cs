@@ -4,8 +4,9 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
 
-    [Header("Audio Source")]
-    public AudioSource audioSource;
+    [Header("Audio Sources")]
+    public AudioSource sfxSource;
+    public AudioSource musicSource;
 
     [Header("Sound Effects")]
     public AudioClip paddleHitSound;
@@ -16,6 +17,11 @@ public class AudioManager : MonoBehaviour
     public AudioClip winSound;
     public AudioClip gameOverSound;
 
+    [Header("Background Music")]
+    public AudioClip backgroundMusic;
+
+    private bool musicMuted = false;
+
     void Awake()
     {
         if (Instance == null)
@@ -25,49 +31,83 @@ public class AudioManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            return;
+        }
+    }
+
+    void Start()
+    {
+        PlayBackgroundMusic();
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            ToggleMusic();
         }
     }
 
     public void PlayPaddleHit()
     {
-        PlaySound(paddleHitSound);
+        PlaySFX(paddleHitSound);
     }
 
     public void PlayWallHit()
     {
-        PlaySound(wallHitSound);
+        PlaySFX(wallHitSound);
     }
 
     public void PlayBrickHit()
     {
-        PlaySound(brickHitSound);
+        PlaySFX(brickHitSound);
     }
 
     public void PlayBrickBreak()
     {
-        PlaySound(brickBreakSound);
+        PlaySFX(brickBreakSound);
     }
 
     public void PlayLoseLife()
     {
-        PlaySound(loseLifeSound);
+        PlaySFX(loseLifeSound);
     }
 
     public void PlayWin()
     {
-        PlaySound(winSound);
+        PlaySFX(winSound);
     }
 
     public void PlayGameOver()
     {
-        PlaySound(gameOverSound);
+        PlaySFX(gameOverSound);
     }
 
-    void PlaySound(AudioClip clip)
+    void PlaySFX(AudioClip clip)
     {
-        if (audioSource != null && clip != null)
+        if (sfxSource != null && clip != null)
         {
-            audioSource.PlayOneShot(clip);
+            sfxSource.PlayOneShot(clip);
+        }
+    }
+
+    public void PlayBackgroundMusic()
+    {
+        if (musicSource != null && backgroundMusic != null)
+        {
+            musicSource.clip = backgroundMusic;
+            musicSource.loop = true;
+            musicSource.Play();
+        }
+    }
+
+    public void ToggleMusic()
+    {
+        musicMuted = !musicMuted;
+
+        if (musicSource != null)
+        {
+            musicSource.mute = musicMuted;
         }
     }
 }
